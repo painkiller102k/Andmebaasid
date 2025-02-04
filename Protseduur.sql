@@ -68,3 +68,10 @@ exec linnaOtsing P;
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Kasutame XAMPP / localhost
 
+create table linn(
+linnId int primary key auto_increment,
+linnNimi varchar(30),
+rahvaArt int);
+select * from linn;
+insert into linn(linnnimi,rahvaArt)
+values ('Tallinn',60000), ('Narva',70000), ('Tartu',80000);
