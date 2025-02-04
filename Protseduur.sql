@@ -65,6 +65,26 @@ end;
 ---kutse
 exec linnaOtsing P;
 
+---tabeli eeundamine - rahvaarv kasvab 10% võrra
+update linn set rahvaArt=rahvaArt*1.1
+select * from linn
+update linn set rahvaArt=rahvaArt*1.1
+where linnId=7;
+
+create procedure rahvaArvuUuendus
+@linnId int,
+@koef decimal(2,1)
+as
+begin
+update linn set rahvaArt=rahvaArt*@koef
+where linnId=@linnId;
+select * from linn;
+end;
+
+exec rahvaArvuUuendus 7, 1.1;
+
+drop procedure rahvaArvuUuendus ---kustumine
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Kasutame XAMPP / localhost
 
