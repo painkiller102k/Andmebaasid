@@ -1,5 +1,5 @@
 CREATE TABLE opilane(
-	opilaneID int AUTO_INCREMENT,
+	opilaneID int primary key identity (1,1),
 	eesnimi varchar(25) not null,
 	perenimi varchar(25) not null,
 	sunniaeg date,
@@ -8,43 +8,8 @@ CREATE TABLE opilane(
 	keskmine_hinne decimal(2,1)
 	)
 	select * from opilane;
-	--andmete lisamine tabelisse
-	INSERT INTO opilane(
-	eesnimi,
-	perenimi,
-	sunniaeg,
-	stip,	
-	keskmine_hinne)
-	VALUES(
-	'Nikita',
-	'Nikita',
-	'2000-12-12',
-	1,
-	4.5),
-	(
-	'Martin',
-	'Martin',
-	'2006-16-10',
-	2,
-	4.5),
-	(
-	'Roman',
-	'Roman',
-	'2007-31-12',
-	1,
-	4.5);
-(
-	'Marek',
-	'Marek',
-	'2004-21-10',
-	2,
-	4.5);
-(
-	'Mark',
-	'Mark',
-	'2005-21-11',
-	1,
-	4.5);
+INSERT INTO opilane (eesnimi, perenimi, sunniaeg, stip, keskmine_hinne)
+VALUES ('Martin', 'Rossakov', '2006-10-16', 1, 4.5), ('Nikita', 'Goncharov', '2007-12-12', 0, 6.5), ('Mark', 'Jürgen', '2005-11-13', 1, 4.6),('Marek', 'Lukk', '2004-10-15', 1, 4.7), ('Roman', 'Zaitsev', '2004-10-16', 1, 4.8);
 
 	CREATE TABLE Language(
 ID int NOT NULL AUTO_INCREMENT,
