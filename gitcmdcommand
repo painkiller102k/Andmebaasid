@@ -1,0 +1,16 @@
+cd desktop - перейти в дерикторию десктоп
+cd .. - перейти в основную дерикторию
+c: - перейти на другой диск
+--global user.name "martinrossakov" - добавить имя
+--global user.email "mstislavlandsh@gmail.com" - добавить почту
+git config --global --list - проверить добавилось ли
+git clone git@github.com:IrinaMerkulova/TARpv24andmebaasTerms.git - войти в мейн
+cd TARpv24andmebaasTerms - перейти
+git status - проверить в мейн бренч ли мы
+git branch martinrossakov - создать свою ветку
+git checkout martinrossakov - проверить 
+git status - проверить
+git add . - добавь к отслеживанию
+git commit -a -m "Nimi on lisatud" - комментарий к действию
+git status
+git push - отправить то что надо и скопировать потом остальное
